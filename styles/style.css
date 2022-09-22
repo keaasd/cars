@@ -125,9 +125,8 @@ box-shadow: 0 0 1px 2px #030305;
     display: flex;
     justify-content: center;
     gap: 15px;
-
 }
 .car-item-image img {
     max-width: 384px;
-
+    /* d */
 }
