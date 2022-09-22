@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Roboto sans-serif;
+    font-family: Roboto, serif;
     color: #030305;
 }
 
@@ -15,13 +15,13 @@ body {
 }
 
 @font-face {
-    font-family: roboto;
-    src: url('../fonts/Roboro.ttf');
+    font-family: Roboto;
+    src: url('../fonts/Roboto.ttf');
 }
 
 @font-face {
-    font-family: roboto;
-    src: url('../fonts/RoboroBold.ttf');
+    font-family: Roboto;
+    src: url('../fonts/RobotoBold.ttf');
     font-weight: bold;
 }
 
@@ -98,6 +98,7 @@ body {
     height: 64px;
     background: #030305;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -105,4 +106,28 @@ body {
     background: #FFFFFF;
     border-color: #030305;
     transition: .3s;
+}
+
+.car-items {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 3;
+/* flex-wrap: wrap; */
+gap: 24px;
+}
+.car-item {
+transition: .3s;
+}
+.car-item:hover {
+box-shadow: 0 0 1px 2px #030305;
+}
+.car-item-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+.car-item-image img {
+    max-width: 384px;
+
 }
